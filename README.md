@@ -1,7 +1,8 @@
 # About Me!
 
 ## Links
-add links here
+- [My GitHub Account](https://github.com/AlexBecthold "to Github")
+- [This GitHub Page](https://alexbecthold.github.io/aboutme/ "to GitHub Pages")
 
 ## About
 what is this repo for?
