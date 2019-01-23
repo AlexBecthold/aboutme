@@ -8,7 +8,15 @@
 This repository will be used throughout the semester to learn various web development techniques.
 
 ## Recommended Tools
-With text, lists, and links, tell your user what tools and languages are required for them to publish a repo with GitHub pages.
+Getting started with GitHub pages is very simple.
+1. Create a new repository
+1. In the Settings tab, select what source to use for the page
+1. Click save and you're done!  A link to access the site should be shown.
+
+In order to get full use of this site, it helps to know some things
+- Markdown: [Using Markdown](https://www.markdownguide.org/)
+- HTML: [Using HTML](https://www.w3schools.com/html/)
+- Javascript [Using JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 ## Recommended Resources
 add links to 3 web dev resources
