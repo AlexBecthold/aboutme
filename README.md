@@ -19,7 +19,10 @@ In order to get full use of this site, it helps to know some things
 - Javascript [Using JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 ## Recommended Resources
-add links to 3 web dev resources
+Some more helpful links
+- [Getting Started with Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics "Getting Started with Git")
+- [Beginner's Guide to Web Dev](https://devmountain.com/guides/learn-web-development "Web Dev Guide")
+- [jQuery](http://jquery.com/ "jQuery")
 
 ## Contributors
 Robert Becthold - Computer Science Major at NWMSU
