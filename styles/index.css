@@ -67,3 +67,7 @@ footer {
     text-align: center;
     font-size: 150%;
 }
+
+#me {
+    border-radius: 50%;
+}
