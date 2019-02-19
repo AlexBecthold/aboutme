@@ -11,25 +11,26 @@
         <!-- Link to CSS Stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/calculation.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 
-    <body class="bgimg">
+    <body class="bgimg" background="images/mexico.JPG">
+        <!-- Background image photographed by Robert Becthold -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="index.html">Robert Becthold</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="calculation.html">Calculation</a>
                     </li>
                 </ul>
@@ -37,11 +38,25 @@
         </nav>
 
         <header class="container-fluid">
-            <h1>Robert Becthold</h1>
+            <hr />
+            <h1>Robert Becthold <img id="me" src="images/me.png" alt="Robert Becthold" height="120em" width="80em"></h1>
+            <hr />
         </header>
 
-        <main>
-
+        <main class="container-fluid input">
+            <h2>Pig Latin</h2>
+            <form action="mailto:s526668@nwmissouri.edu" method="post" enctype="text/plain">
+                Text to Pig Latin-ify<br>
+                <input type="text" name="textToChange">
+                <br>
+                <br>
+                Text for Latin pigs
+                <br>
+                <!-- Output changed value after running JS script -->
+                <input type="text" name="message" size="100"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </form>
         </main>
 
         <footer class="container-fluid">
