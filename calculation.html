@@ -44,23 +44,25 @@
         </header>
 
         <main class="container-fluid input">
-            <h2>Pig Latin</h2>
-            <form action="mailto:s526668@nwmissouri.edu" method="post" enctype="text/plain">
-                Text to Pig Latin-ify<br>
-                <input type="text" name="textToChange">
-                <br>
-                <br>
-                Text for Latin pigs
-                <br>
-                <!-- Output changed value after running JS script -->
-                <input type="text" name="message" size="100"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Clear">
-            </form>
+            <h2>Squares</h2>
+            <label id="inputLabel">Square a number!</label>
+            <br>
+            <input id="input" type="text" name="numToSquare">
+            <br>
+            <br>
+            <label id="outputLabel">Squared number</label>
+            <br>
+            <!-- Output changed value after running JS script -->
+            <p id="output">Output</p>
+            <br>
+            <button id="submit" type="submit" value="Send"></button>
+            <button id="reset" type="reset" value="Clear"></button>
         </main>
 
         <footer class="container-fluid">
             &copy; Robert Becthold - 2019
         </footer>
+
+        <script src="scripts/square.js"></script>
     </body>
 </html>
