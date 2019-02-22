@@ -45,18 +45,13 @@
 
         <main class="container-fluid input">
             <h2>Squares</h2>
-            <label id="inputLabel">Square a number!</label>
-            <br>
-            <input id="input" type="text" name="numToSquare">
-            <br>
-            <br>
-            <label id="outputLabel">Squared number</label>
-            <br>
-            <!-- Output changed value after running JS script -->
-            <p id="output">Output</p>
-            <br>
-            <button id="submit" type="submit" value="Send"></button>
-            <button id="reset" type="reset" value="Clear"></button>
+            <p>
+                Enter a number to square:
+                <input id="inputNum" type="text" value="2">
+            </p>
+            <p id="outputNum"></p>
+            <button id="submitButton" class="btn btn-primary">Square</button>
+            <button id="resetButton" class="btn btn-danger">Reset</button>
         </main>
 
         <footer class="container-fluid">
