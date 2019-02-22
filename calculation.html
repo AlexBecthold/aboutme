@@ -51,7 +51,7 @@
                 <input id="inputNum" type="text" value="2"></input> 
             </p>
             <h3>Output:</h3>
-            <p id="outputNum" value="Output"></p>
+            <p id="outputNum" value="Output">Output</p>
             <button id="submitButton" class="btn btn-primary">Square</button>
             <button id="resetButton" class="btn btn-danger">Reset</button>
         </main>
@@ -65,17 +65,20 @@
             let resetButton = document.getElementById("resetButton")
 
             console.log("INFO: Declaring functions")
-            function square() {
-                let num = parseInt(inputNum.textContent)
-                outputNum.textContent = num*num
-            }
-            function reset() {
-                outputNum.textContent = "Output"
+            function square(num) {
+                let sqNum = num*num
+                return sqNum
             }
 
             console.log("INFO: Configuring event handlers")
-            submitButton.onclick = square
-            resetButton.onclick = reset
+            submitButton.addEventListener('click', function () {
+                let inNum = parseInt(inputNum.innerHTML)
+                let out = square(inNum)
+                outputNum.textContent = toString(out)
+            })
+            resetButton.addEventListener('click', function () {
+                outputNum.innerHTML = "Output"
+            })
 
             console.log("INFO: Done loading, waiting for an event")
         </script>
