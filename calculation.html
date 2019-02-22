@@ -45,19 +45,43 @@
 
         <main class="container-fluid input">
             <h2>Squares</h2>
+            <h3>Enter a number, and its square will be</h3>
             <p>
                 Enter a number to square:
-                <input id="inputNum" type="text" value="2">
+                <input id="inputNum" type="text" value="2"></input> 
             </p>
-            <p id="outputNum"></p>
+            <h3>Output:</h3>
+            <p id="outputNum" value="Output"></p>
             <button id="submitButton" class="btn btn-primary">Square</button>
             <button id="resetButton" class="btn btn-danger">Reset</button>
         </main>
 
+        <script>
+            console.log("INFO: Starting to read square.js")
+            console.log("INFO: Getting access to elements")
+            let inputNum = document.getElementById("inputNum")
+            let outputNum = document.getElementById("outputNum")
+            let submitButton = document.getElementById("submitButton")
+            let resetButton = document.getElementById("resetButton")
+
+            console.log("INFO: Declaring functions")
+            function square() {
+                let num = parseInt(inputNum.textContent)
+                outputNum.textContent = num*num
+            }
+            function reset() {
+                outputNum.textContent = "Output"
+            }
+
+            console.log("INFO: Configuring event handlers")
+            submitButton.onclick = square
+            resetButton.onclick = reset
+
+            console.log("INFO: Done loading, waiting for an event")
+        </script>
+
         <footer class="container-fluid">
             &copy; Robert Becthold - 2019
         </footer>
-
-        <script src="scripts/square.js"></script>
     </body>
 </html>
